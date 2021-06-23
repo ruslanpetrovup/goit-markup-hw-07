@@ -1,0 +1,261 @@
+@import 'util/color-util-project';
+@import 'component/header';
+
+// Герой
+.banner {
+  text-align: center;
+  padding: 200px 0;
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner__title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $bg-color;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner__button {
+  color: $bg-color;
+  background-color: $second-text-color;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms $animation;
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+// Наши сильные стороны
+.work {
+  padding-top: 94px;
+}
+.work__line {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.work__item {
+  width: 270px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.work__block {
+  display: flex;
+  width: 270px;
+  padding: 25px 0;
+  background-color: $filtr;
+  border-radius: 4px;
+}
+.work__icon {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work__title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $lead-text-color;
+}
+.work__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $contacts-text;
+}
+// Чем мы занимаемся
+.metier {
+  padding: 94px 0;
+}
+.metier__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $lead-text-color;
+}
+.metier__line {
+  display: flex;
+  list-style: none;
+}
+.metier__item:not(:first-child) {
+  margin-left: 30px;
+}
+.metier__block-images {
+  position: relative;
+}
+.metier__images {
+  display: block;
+}
+.metier__thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $work-bg;
+}
+.metier__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $bg-color;
+  padding: 27px 0;
+}
+// Наша команда
+.team {
+  padding: 94px 0;
+  background-color: $filtr;
+}
+.team__title-head {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $lead-text-color;
+}
+.team__line {
+  display: flex;
+}
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  overflow: hidden;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.team__images {
+  display: block;
+}
+.team__block-item {
+  padding: 30px 32px;
+  background-color: $bg-color;
+}
+.team__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: $lead-text-color;
+}
+.team__text {
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: $contacts-text;
+  margin-top: 10px;
+}
+.team__icon-line {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.team__item-icon:not(:first-child) {
+  margin-left: 10px;
+}
+.team__icon-link {
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 12px 12px;
+  color: $icon;
+  background-color: $bg-color;
+  transition: color 250ms $animation, background-color 250ms $animation;
+  &:focus,
+  &:hover {
+    background-color: $second-text-color;
+    color: $bg-color;
+    overflow: hidden;
+  }
+}
+.team__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  &:focus,
+  &:hover {
+    fill: currentColor;
+  }
+}
+.company {
+  padding: 94px 0;
+}
+.company__title {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $lead-text-color;
+}
+.company__line {
+  display: flex;
+  margin-top: 50px;
+}
+.company__item:not(:first-child) {
+  margin-left: 30px;
+}
+.company__link {
+  display: flex;
+  width: 170px;
+  border: 1px solid $icon;
+  border-radius: 4px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  color: $icon;
+  transition: color 250ms $animation, border 250ms $animation;
+  &:focus,
+  &:hover {
+    color: $second-text-color;
+    border-color: $second-text-color;
+  }
+}
+.company__icon {
+  fill: currentColor;
+  height: 50px;
+  &:focus,
+  &:hover {
+    fill: currentColor;
+  }
+}
+@import 'component/modal-window';
+@import 'component/footer';
